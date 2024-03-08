@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  FrontEndSite
+  首页 - FrontEndSite
   
   </title>
   
@@ -42,7 +42,7 @@
         
         <li id="archives"><a target="_self" href="archives.html">文章</a></li>
         
-        <li id="about"><a target="_self" href="about.html">关于</a></li>
+        <li id="post"><a target="_self" href="post.html">关于</a></li>
         
         </ul>
 
@@ -73,7 +73,7 @@
         
         <li><a target="_self" href="archives.html">文章</a></li>
         
-        <li><a target="_self" href="about.html">关于</a></li>
+        <li><a target="_self" href="post.html">关于</a></li>
         
 
     <li><label>Categories</label></li>
@@ -82,6 +82,10 @@
             <li><a href="%E5%85%B6%E4%BB%96.html">其他</a></li>
         
             <li><a href="vue.html">vue</a></li>
+        
+            <li><a href="react.html">react</a></li>
+        
+            <li><a href="javascript.html">javascript</a></li>
          
 
       </ul>
@@ -96,173 +100,21 @@
 
  <script type="text/javascript">
 	$(function(){
-		$('#menu_item_index').addClass('is_active');
+		var currentURL = 'index.html';
+		currentURL = currentURL.substr(0,currentURL.length-5);
+		$('#menu_item_'+currentURL).addClass('is_active');
 	});
 </script>
 <div class="row">
-	<div class="large-8 medium-8 columns">
-		<div class="markdown-body home-categories">
-		
-			<div class="article">
-                <a class="clearlink" href="17098722660696.html">
-                
-                  <h1>computed计算属性</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2024/03/08</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='vue.html'>vue</a></span>
-          				   
-                    
 
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
+    <div id="single-page-wrap">
+        <h1>首页</h1>
 
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
+        <div class="markdown-body post-page">
         
-			<div class="article">
-                <a class="clearlink" href="17098719729227.html">
-                
-                  <h1>![logo](media/17098719729227/logo.png)</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2024/03/08</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E5%85%B6%E4%BB%96.html'>其他</a></span>
-          				   
-                    
-
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-              
-
-
-			<div class="row">
-			  <div class="large-6 columns">
-			  <p class="text-left" style="padding-top:25px;">
-			   
-			  </p>
-			  </div>
-			  <div class="large-6 columns">
-			<p class="text-right" style="padding-top:25px;">
-			
-			</p>
-			  </div>
-			</div>
-		</div>
-	</div><!-- large 8 -->
-
- <div class="large-4 medium-4 columns">
-  <div class="hide-for-small">
-    <div id="sidebar" class="sidebar">
-          <div id="site-info" class="site-info">
-            
-                <div class="site-a-logo"><img src="media/17098719729227/logo.png" /></div>
-            
-                <h1>FrontEndSite</h1>
-                <div class="site-des"></div>
-                <div class="social">
-
-
-
-
-
-
-
-
-
-<a target="_blank" class="github" target="_blank" href="https://lhhdiv.github.io/lhh.github.io/" title="GitHub">GitHub</a>
-
-  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
-                
-              	 </div>
-          	</div>
-
-             
-
-              <div id="site-categories" class="side-item ">
-                <div class="side-header">
-                  <h2>Categories</h2>
-                </div>
-                <div class="side-content">
-
-      	<p class="cat-list">
-        
-            <a href="%E5%85%B6%E4%BB%96.html"><strong>其他</strong></a>
-        
-            <a href="vue.html"><strong>vue</strong></a>
-         
-        </p>
-
-
-                </div>
-              </div>
-
-              <div id="site-categories" class="side-item">
-                <div class="side-header">
-                  <h2>Recent Posts</h2>
-                </div>
-                <div class="side-content">
-                <ul class="posts-list">
-	      
-		      
-			      <li class="post">
-			        <a href="17098722660696.html">computed计算属性</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="17098719729227.html">![logo](media/17098719729227/logo.png)</a>
-			      </li>
-		     
-		   
-		  		</ul>
-                </div>
-              </div>
-        </div><!-- sidebar -->
-      </div><!-- hide for small -->
-</div><!-- large 4 -->
-
-</div><!-- row -->
-
+        </div>
+    </div>
+</div>              
  <div class="page-bottom clearfix">
   <div class="row">
    <p class="copyright">Copyright &copy; 2015

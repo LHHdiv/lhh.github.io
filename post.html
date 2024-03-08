@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  Archives - FrontEndSite
+  关于页 - FrontEndSite
   
   </title>
   
@@ -99,172 +99,22 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_archives').addClass('is_active');
-  });
+	$(function(){
+		var currentURL = 'post.html';
+		currentURL = currentURL.substr(0,currentURL.length-5);
+		$('#menu_item_'+currentURL).addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-    <div id="archives-page-wrap">
-        <h1>Archives</h1>
-        <div class="markdown-body archives-wrap">
-          
-             
-                <h1>2024</h1>
-            
-            <div class="article">
-              <a class="clearlink" href="17099075223666.html">
-                <h1>this、闭包、作用域</h1>
-              </a>
-              <div class="read-more clearfix">
-                <span class="date">2024/03/08</span>
-                <span>posted in&nbsp;</span> 
-                
-                    <span class="posted-in"><a href='javascript.html'>javascript</a></span>
-                 
-              </div>
-            </div><!-- article -->
 
-          
-            
-            <div class="article">
-              <a class="clearlink" href="17098731473262.html">
-                <h1>React fiber架构111</h1>
-              </a>
-              <div class="read-more clearfix">
-                <span class="date">2024/03/08</span>
-                <span>posted in&nbsp;</span> 
-                
-                    <span class="posted-in"><a href='react.html'>react</a></span>
-                 
-              </div>
-            </div><!-- article -->
+    <div id="single-page-wrap">
+        <h1>关于页</h1>
 
-          
-            
-            <div class="article">
-              <a class="clearlink" href="17098722660696.html">
-                <h1>computed计算属性</h1>
-              </a>
-              <div class="read-more clearfix">
-                <span class="date">2024/03/08</span>
-                <span>posted in&nbsp;</span> 
-                
-                    <span class="posted-in"><a href='vue.html'>vue</a></span>
-                 
-              </div>
-            </div><!-- article -->
-
-          
-            
-            <div class="article">
-              <a class="clearlink" href="17098719729227.html">
-                <h1>![logo](media/17098719729227/logo.png)</h1>
-              </a>
-              <div class="read-more clearfix">
-                <span class="date">2024/03/08</span>
-                <span>posted in&nbsp;</span> 
-                
-                    <span class="posted-in"><a href='%E5%85%B6%E4%BB%96.html'>其他</a></span>
-                 
-              </div>
-            </div><!-- article -->
-
-           
+        <div class="markdown-body post-page">
+        
         </div>
-      </div>
-  </div>
-
- <div class="large-4 medium-4 columns">
-  <div class="hide-for-small">
-    <div id="sidebar" class="sidebar">
-          <div id="site-info" class="site-info">
-            
-                <div class="site-a-logo"><img src="media/17098719729227/logo.png" /></div>
-            
-                <h1>FrontEndSite</h1>
-                <div class="site-des"></div>
-                <div class="social">
-
-
-
-
-
-
-
-
-
-<a target="_blank" class="github" target="_blank" href="https://lhhdiv.github.io/lhh.github.io/" title="GitHub">GitHub</a>
-
-  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
-                
-              	 </div>
-          	</div>
-
-             
-
-              <div id="site-categories" class="side-item ">
-                <div class="side-header">
-                  <h2>Categories</h2>
-                </div>
-                <div class="side-content">
-
-      	<p class="cat-list">
-        
-            <a href="%E5%85%B6%E4%BB%96.html"><strong>其他</strong></a>
-        
-            <a href="vue.html"><strong>vue</strong></a>
-        
-            <a href="react.html"><strong>react</strong></a>
-        
-            <a href="javascript.html"><strong>javascript</strong></a>
-         
-        </p>
-
-
-                </div>
-              </div>
-
-              <div id="site-categories" class="side-item">
-                <div class="side-header">
-                  <h2>Recent Posts</h2>
-                </div>
-                <div class="side-content">
-                <ul class="posts-list">
-	      
-		      
-			      <li class="post">
-			        <a href="17099075223666.html">this、闭包、作用域</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="17098731473262.html">React fiber架构111</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="17098722660696.html">computed计算属性</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="17098719729227.html">![logo](media/17098719729227/logo.png)</a>
-			      </li>
-		     
-		   
-		  		</ul>
-                </div>
-              </div>
-        </div><!-- sidebar -->
-      </div><!-- hide for small -->
-</div><!-- large 4 -->
-
-</div><!-- row -->
-
+    </div>
+</div>              
  <div class="page-bottom clearfix">
   <div class="row">
    <p class="copyright">Copyright &copy; 2015
@@ -277,7 +127,89 @@ Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
       </div>
     </div>
 
+<style>.mweb-charts{background:#fff;}
+body{ box-sizing: border-box;
+    margin: 0 auto;}
+@media print{
+    pre, code, pre code {
+     overflow: visible !important;
+     white-space: pre-wrap !important;       /* css-3 */
+     white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+     white-space: -pre-wrap !important;      /* Opera 4-6 */
+     white-space: -o-pre-wrap !important;    /* Opera 7 */
+     word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
+    }
+    html,body{margin:0;padding:4px;}
+}
 
+
+
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  z-index: 10;
+  top: .3em;
+  right: .2em;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1;
+}
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+  display: inline-block;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a {
+  cursor: pointer;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a,
+div.code-toolbar > .toolbar > .toolbar-item > button,
+div.code-toolbar > .toolbar > .toolbar-item > span {
+  color: inherit;
+  font-size: .8em;
+  padding: 4px .5em;
+  background: #f5f2f0;
+  background: rgba(224, 224, 224, 0.4);
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+  border-radius: .5em;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a:hover,
+div.code-toolbar > .toolbar > .toolbar-item > a:focus,
+div.code-toolbar > .toolbar > .toolbar-item > button:hover,
+div.code-toolbar > .toolbar > .toolbar-item > button:focus,
+div.code-toolbar > .toolbar > .toolbar-item > span:hover,
+div.code-toolbar > .toolbar > .toolbar-item > span:focus {
+  color: inherit;
+  text-decoration: none;
+}
+</style>
 
 <style type="text/css">
 figure{margin: 0;padding: 0;}
